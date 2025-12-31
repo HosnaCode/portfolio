@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {
-    Mail, Github, Linkedin, ArrowRight, ExternalLink, Sparkles, Layout, ShoppingCart, BarChart3, Briefcase, Code2, Zap, Smartphone
+    Mail, Linkedin, ArrowRight, Sparkles, Layout, ShoppingCart, BarChart3, Briefcase, Code2, Zap, Smartphone
 } from 'lucide-react';
-import {motion, useScroll, useTransform} from 'framer-motion';
+import {motion, useScroll} from 'framer-motion';
 
 /* -------------------- Helpers -------------------- */
 
@@ -37,7 +37,6 @@ const Magnetic = ({children}) => {
 const Portfolio = () => {
     const [mouse, setMouse] = useState({x: 0, y: 0});
     const {scrollYProgress} = useScroll();
-    const titleY = useTransform(scrollYProgress, [0, 1], [0, -120]);
 
     useEffect(() => {
         const move = (e) => setMouse({x: e.clientX, y: e.clientY});
@@ -610,11 +609,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="flex justify-center gap-6 text-gray-400">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                           className="hover:text-emerald-400 transition-colors">
-                            <Github size={24}/>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/in/hosna-tadj-el-baha-bensihamdi" target="_blank" rel="noopener noreferrer"
                            className="hover:text-emerald-400 transition-colors">
                             <Linkedin size={24}/>
                         </a>
