@@ -106,7 +106,7 @@ const Portfolio = () => {
         tools: ['React', 'UI/UX Design'],
         year: '2024',
         category: 'Landing Page Design',
-        image: 'images/restaurant-design.PNG'
+        image: 'images/restaurant-design.png'
     }];
 
     const skills = [
